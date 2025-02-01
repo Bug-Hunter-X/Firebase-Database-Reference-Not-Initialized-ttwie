@@ -1,0 +1,1 @@
+The Firebase SDK might throw an error if you try to access a database reference before it's fully initialized. This is especially common when using asynchronous operations like promises or async/await.  For example, if you try to read data from a database reference immediately after calling `initializeApp()`, the reference might not be ready yet, resulting in an error. 
